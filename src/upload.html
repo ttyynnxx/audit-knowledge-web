@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>基本信息</title>
+		
+		<link href="plugins/icon/iconfont.css"  rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" href="plugins/fontawesome-5.7.2/css/all.css" />
+		<link href="plugins/layui/css/layui.css"  rel="stylesheet" type="text/css"/>
+		<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+		
+		<script type="text/javascript" src="plugins/layui/layui.js"></script>
+		<script type="text/javascript" src="plugins/icon/iconfont.js"></script>
+		<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+	</head>
+	<body class="mine-page">
+		<header>
+			<div class="wrapper">
+				<img src="img/logo-white.png" class="fl logo">
+				<div class="top-search fl">
+					<input type="text" class="top-input" />
+					<a href="#" class="i-searchBtn"><i class="fas fa-search"></i> 查询</a>
+				</div>
+				<a href="" class="top-user"><i class="fas fa-user-circle"></i> 个人中心</a>
+			</div>
+		</header>
+		<div class="wrapper mt80 mine-wrapper">
+			<!--left-->
+			<div class="user-nav fl">
+				<div class="user-info">
+					<i class="fas fa-user-circle"></i>
+					<span>admin</span>
+				</div>
+				<a href="upload.html" class="btn-upload">我要上传</a>
+				<div class="user-navLi mt20">
+					<a href="mine.html"><span class="i-icon"><i class="fas fa-upload"></i></span>我上传的<em>(19)</em></a>
+					<a href="#"><span class="i-icon"><i class="fas fa-download"></i></span>我下载的<em>(5)</em></a>
+					<a href="#"><span class="i-icon"><i class="fas fa-star"></i></span>我收藏的<em>(9)</em></a>
+					<a href="#"><span class="i-icon"><i class="fas fa-edit"></i></span>我评论的<em>(22)</em></a>
+					<a href="msg.html"><span class="i-icon"><i class="fas fa-bell"></i></span>我的消息<em>(15)</em></a>
+					<hr>
+					<a href="edit-info.html"><span class="i-icon"><i class="fas fa-user-edit"></i></span>账号信息</a>
+				</div>
+			</div>
+			<!--left end-->
+			<!--结果列表-->
+			<div class="list-con list-mine clearfix">
+				<div class="title-recommend" ><span>我要上传</span> </div>
+				<form class="layui-form " action="">
+					<div class="layui-form-item">
+					    <label class="layui-form-label">标题</label>
+					    <div class="layui-input-block">
+					      <input type="text"  class="layui-input">
+					    </div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">目录</label>
+						<div class="layui-input-block">
+						  <select name="modules" lay-verify="required" lay-search="">
+							<option value="">直接选择或搜索选择</option>
+							<option value="1">layer</option>
+							<option value="2">form</option>
+							<option value="3">layim</option>
+							<option value="4">element</option>
+							<option value="5">laytpl</option>
+							<option value="6">upload</option>
+							<option value="7">laydate</option>
+							<option value="8">laypage</option>
+							<option value="9">flow</option>
+							<option value="10">util</option>
+							<option value="11">code</option>
+							<option value="12">tree</option>
+							<option value="13">layedit</option>
+							<option value="14">nav</option>
+							<option value="15">tab</option>
+							<option value="16">table</option>
+							<option value="17">select</option>
+							<option value="18">checkbox</option>
+							<option value="19">switch</option>
+							<option value="20">radio</option>
+						  </select>
+						</div>
+					</div>
+					 <div class="layui-form-item">
+					    <label class="layui-form-label">上传形式</label>
+					    <div class="layui-input-block">
+					      <input type="radio" name="uploadType" lay-filter="uploadType" value="0" title="上传文件" checked="">
+					      <input type="radio" name="uploadType" lay-filter="uploadType" value="1" title="手动编写">
+					    </div>
+					  </div>
+					  <div class="layui-form-item" id="uploadBox">
+					     <label class="layui-form-label"></label>
+					     <div class="layui-input-block">
+							 <div class="layui-upload-drag" id="test10" style="width: 100%;">
+							   <i class="layui-icon"></i>
+							   <p>点击上传，或将文件拖拽到此处</p>
+							   <div class="layui-hide" id="uploadDemoView">
+							     <hr>
+							    <!-- <img src="" alt="上传成功后渲染" style="max-width: 196px"> -->
+							   </div>
+							 </div>
+					     </div>
+					   </div>
+					   <div class="layui-form-item layui-form-text hide" id="textBox">
+						 <label class="layui-form-label"></label>
+						 <div class="layui-input-block">
+						   <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+						 </div>
+					   </div>
+					   <div class="layui-form-item">
+					       <div class="layui-input-block">
+					         <button type="submit" class="layui-btn" lay-submit="" lay-filter="demo1">立即提交</button>
+					         <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+					       </div>
+					     </div>
+				</form>
+			</div>
+			<!--结果列表 end-->
+			
+		</div>
+		<script>
+		//注意：折叠面板 依赖 element 模块，否则无法进行功能性操作
+		layui.use(['element','form','upload'], function(){
+		  var element = layui.element,
+		  form = layui.form,
+		  upload = layui.upload;
+		  
+		  //alert("这是个男孩"); 
+		  //拖拽上传
+		    upload.render({
+		      elem: '#test10'
+		      ,url: 'https://httpbin.org/post' //改成您自己的上传接口
+		      ,accepet: 'file'
+			  ,exts:'doc|pdf'
+			  ,done: function(res){
+		        layer.msg('上传成功');
+		        console.log(res)
+		      }
+		    });
+			
+			//单选切换
+			form.on('radio(uploadType)', function (data) {
+			   var sex = data.value;
+				if (this.value == '0') { 
+					$("#uploadBox").removeClass('hide').addClass('show');
+					$("#textBox").removeClass('show').addClass('hide');
+				} else if (this.value == '1') { 
+					$("#uploadBox").removeClass('show').addClass('hide');
+					$("#textBox").removeClass('hide').addClass('show');
+				} 
+			});
+		});
+	  
+		</script>
+		
+	</body>
+</html>
