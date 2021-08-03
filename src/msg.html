@@ -1,154 +1,160 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>个人中心</title>
-		
-		<link href="plugins/icon/iconfont.css"  rel="stylesheet" type="text/css"/>
-		<link rel="stylesheet" href="plugins/fontawesome-5.7.2/css/all.css" />
-		<link href="plugins/layui/css/layui.css"  rel="stylesheet" type="text/css"/>
-		<link href="css/reset.css" rel="stylesheet" type="text/css"/>
-		<link href="css/style.css" rel="stylesheet" type="text/css"/>
-		
-		<script type="text/javascript" src="plugins/layui/layui.js"></script>
-		<script type="text/javascript" src="plugins/icon/iconfont.js"></script>
-		<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
-	</head>
-	<body  class="mine-page">
-		<header>
-			<div class="wrapper">
-				<img src="img/logo-white.png" class="fl logo">
-				<div class="top-search fl">
-					<input type="text" class="top-input" />
-					<a href="#" class="i-searchBtn"><i class="fas fa-search"></i> 查询</a>
-				</div>
-				<a href="#" class="top-user"><i class="fas fa-user-circle"></i> 个人中心</a>
+
+<head>
+	<meta charset="utf-8">
+	<title>个人中心</title>
+
+	<link href="plugins/icon/iconfont.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="plugins/fontawesome-5.7.2/css/all.css" />
+	<link href="plugins/layui/css/layui.css" rel="stylesheet" type="text/css" />
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="plugins/layui/layui.js"></script>
+	<script type="text/javascript" src="plugins/icon/iconfont.js"></script>
+	<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+</head>
+
+<body class="mine-page">
+	<header>
+		<div class="wrapper">
+			<a href="list.html"><img src="img/logo-white.png" class="fl logo"></a>
+			<div class="top-search fl">
+				<input type="text" class="top-input" />
+				<a href="#" class="i-searchBtn"><i class="fas fa-search"></i> 查询</a>
 			</div>
-		</header>
-		<div class="wrapper mt80 mine-wrapper">
-			<!--left-->
-			<div class="user-nav fl">
-				<div class="user-info">
-					<i class="fas fa-user-circle"></i>
-					<span>admin</span>
-				</div>
-				<a href="#" class="btn-upload">我要上传</a>
-				<div class="user-navLi mt20">
-					<a href="mine.html"><span class="i-icon"><i class="fas fa-upload"></i></span>我上传的<em>(19)</em></a>
-					<a href="#"><span class="i-icon"><i class="fas fa-download"></i></span>我下载的<em>(5)</em></a>
-					<a href="#"><span class="i-icon"><i class="fas fa-star"></i></span>我收藏的<em>(9)</em></a>
-					<a href="#"><span class="i-icon"><i class="fas fa-edit"></i></span>我评论的<em>(22)</em></a>
-					<a href="msg.html" class="active"><span class="i-icon"><i class="fas fa-bell"></i></span>我的消息<em>(15)</em></a>
-					<hr>
-					<a href="edit-info.html"><span class="i-icon"><i class="fas fa-user-edit"></i></span>账号信息</a>
-				</div>
-			</div>
-			<!--left end-->
-			
-			<!--结果列表-->
-			<div class="list-con list-mine">
-				<div class="title-recommend" ><span>我的消息</span> <div class="title-input"> <input type="text" class="fr " placeholder="查找所需知识"/></div> </div>
-				<table class="layui-table msg-li" lay-even>
-					<thead>
-					    <tr>
-						  <th width="20"></th>
-					      <th>昵称</th>
-					      <th>操作类型</th>
-					      <th>知识标题</th>
-						  <th>时间</th>
-					    </tr> 
-					  </thead>
-					  <tbody>
-					    <tr class="newMsg">
-						  <td><i class="fas fa-bell"></i></td>
-					      <td>贤心</td>
-					      <td>评论了你的</td>
-					      <td>描述语言与数字逻辑电路设计</td>
-						  <td>2020-07-01</td>
-					    </tr>
-						<tr class="newMsg">
-						  <td><i class="fas fa-bell"></i></td>
-						  <td>贤心</td>
-						  <td>分享了你的</td>
-						  <td>VHDL硬件描述语言与数字逻辑电路设计</td>
-						  <td>2020-07-01</td>
-						</tr>
-						<tr class="newMsg">
-						  <td><i class="fas fa-bell"></i></td>
-						  <td>贤心</td>
-						  <td>收藏了你的</td>
-						  <td>描述语言与数字逻辑电路设计</td>
-						  <td>2020-07-01</td>
-						</tr>
-						<tr class="newMsg">
-						  <td><i class="fas fa-bell"></i></td>
-						  <td>贤心</td>
-						  <td>评论了你的</td>
-						  <td>描述语言与数字逻辑电路设计</td>
-						  <td>2020-07-01</td>
-						</tr>
-						<tr class="newMsg">
-						  <td><i class="fas fa-bell"></i></td>
-						  <td>贤心</td>
-						  <td>评论了你的</td>
-						  <td>描述语言与数字逻辑电路设计</td>
-						  <td>2020-07-01</td>
-						</tr>
-					    <tr>
-						  <td><i class="far fa-bell"></i></td>
-					      <td>许闲心</td>
-					      <td>下载了你的</td>
-					      <td>VHDL硬件描述语言与数字逻辑电路设计—电子工程师必备知识</td>
-						  <td>2020-07-01</td>
-					    </tr>
-						<tr>
-						  <td><i class="far fa-bell"></i></td>
-						  <td>许闲心</td>
-						  <td>下载了你的</td>
-						  <td>VHDL硬件描述语言与数字逻辑电路设计—电子工程师必备知识</td>
-						  <td>2020-07-01</td>
-						</tr>
-						<tr>
-						  <td><i class="far fa-bell"></i></td>
-						  <td>许闲心</td>
-						  <td>下载了你的</td>
-						  <td>VHDL硬件描述语言与数字逻辑电路设计—电子工程师必备知识</td>
-						  <td>2020-07-01</td>
-						</tr>
-						<tr>
-						  <td><i class="far fa-bell"></i></td>
-						  <td>许闲心</td>
-						  <td>下载了你的</td>
-						  <td>VHDL硬件描述语言与数字逻辑电路设计—电子工程师必备知识</td>
-						  <td>2020-07-01</td>
-						</tr>
-						<tr>
-						  <td><i class="far fa-bell"></i></td>
-						  <td>许闲心</td>
-						  <td>下载了你的</td>
-						  <td>VHDL硬件描述语言与数字逻辑电路设计—电子工程师必备知识</td>
-						  <td>2020-07-01</td>
-						</tr>
-					  </tbody>
-				</table>	
-				<div id="demo0"></div>
-			</div>
-			<!--结果列表 end-->
-			
+			<a href="#" class="top-user"><i class="fas fa-user-circle"></i> 个人中心</a>
 		</div>
-		<script>
+	</header>
+	<div class="wrapper mt80 mine-wrapper">
+		<!--left-->
+		<div class="user-nav fl">
+			<div class="user-info">
+				<i class="fas fa-user-circle"></i>
+				<span>admin</span>
+			</div>
+			<a href="#" class="btn-upload">我要上传</a>
+			<div class="user-navLi mt20">
+				<a href="mine.html"><span class="i-icon"><i class="fas fa-upload"></i></span>我上传的<em>(19)</em></a>
+				<a href="#"><span class="i-icon"><i class="fas fa-download"></i></span>我下载的<em>(5)</em></a>
+				<a href="#"><span class="i-icon"><i class="fas fa-star"></i></span>我收藏的<em>(9)</em></a>
+				<a href="#"><span class="i-icon"><i class="fas fa-edit"></i></span>我评论的<em>(22)</em></a>
+				<a href="msg.html" class="active"><span class="i-icon"><i
+							class="fas fa-bell"></i></span>我的消息<em>(15)</em></a>
+				<hr>
+				<a href="edit-info.html"><span class="i-icon"><i class="fas fa-user-edit"></i></span>账号信息</a>
+			</div>
+		</div>
+		<!--left end-->
+
+		<!--结果列表-->
+		<div class="list-con list-mine">
+			<div class="title-recommend"><span>我的消息</span>
+				<div class="title-input"> <input type="text" class="fr " placeholder="查找所需知识" /></div>
+			</div>
+			<table class="layui-table msg-li" lay-even>
+				<thead>
+					<tr>
+						<th width="20"></th>
+						<th>昵称</th>
+						<th>操作类型</th>
+						<th>知识标题</th>
+						<th>时间</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="newMsg">
+						<td><i class="fas fa-bell"></i></td>
+						<td>贤心</td>
+						<td>评论了你的</td>
+						<td>描述语言与数字逻辑电路设计</td>
+						<td>2020-07-01</td>
+					</tr>
+					<tr class="newMsg">
+						<td><i class="fas fa-bell"></i></td>
+						<td>贤心</td>
+						<td>分享了你的</td>
+						<td>VHDL硬件描述语言与数字逻辑电路设计</td>
+						<td>2020-07-01</td>
+					</tr>
+					<tr class="newMsg">
+						<td><i class="fas fa-bell"></i></td>
+						<td>贤心</td>
+						<td>收藏了你的</td>
+						<td>描述语言与数字逻辑电路设计</td>
+						<td>2020-07-01</td>
+					</tr>
+					<tr class="newMsg">
+						<td><i class="fas fa-bell"></i></td>
+						<td>贤心</td>
+						<td>评论了你的</td>
+						<td>描述语言与数字逻辑电路设计</td>
+						<td>2020-07-01</td>
+					</tr>
+					<tr class="newMsg">
+						<td><i class="fas fa-bell"></i></td>
+						<td>贤心</td>
+						<td>评论了你的</td>
+						<td>描述语言与数字逻辑电路设计</td>
+						<td>2020-07-01</td>
+					</tr>
+					<tr>
+						<td><i class="far fa-bell"></i></td>
+						<td>许闲心</td>
+						<td>下载了你的</td>
+						<td>VHDL硬件描述语言与数字逻辑电路设计—电子工程师必备知识</td>
+						<td>2020-07-01</td>
+					</tr>
+					<tr>
+						<td><i class="far fa-bell"></i></td>
+						<td>许闲心</td>
+						<td>下载了你的</td>
+						<td>VHDL硬件描述语言与数字逻辑电路设计—电子工程师必备知识</td>
+						<td>2020-07-01</td>
+					</tr>
+					<tr>
+						<td><i class="far fa-bell"></i></td>
+						<td>许闲心</td>
+						<td>下载了你的</td>
+						<td>VHDL硬件描述语言与数字逻辑电路设计—电子工程师必备知识</td>
+						<td>2020-07-01</td>
+					</tr>
+					<tr>
+						<td><i class="far fa-bell"></i></td>
+						<td>许闲心</td>
+						<td>下载了你的</td>
+						<td>VHDL硬件描述语言与数字逻辑电路设计—电子工程师必备知识</td>
+						<td>2020-07-01</td>
+					</tr>
+					<tr>
+						<td><i class="far fa-bell"></i></td>
+						<td>许闲心</td>
+						<td>下载了你的</td>
+						<td>VHDL硬件描述语言与数字逻辑电路设计—电子工程师必备知识</td>
+						<td>2020-07-01</td>
+					</tr>
+				</tbody>
+			</table>
+			<div id="demo0"></div>
+		</div>
+		<!--结果列表 end-->
+
+	</div>
+	<script>
 		//注意：折叠面板 依赖 element 模块，否则无法进行功能性操作
-		layui.use(['element','form','laypage'], function(){
-		  var element = layui.element,
-		  form = layui.form,
-		  laypage = layui.laypage;
-		  //总页数低于页码总数
+		layui.use(['element', 'form', 'laypage'], function () {
+			var element = layui.element,
+				form = layui.form,
+				laypage = layui.laypage;
+			//总页数低于页码总数
 			laypage.render({
-			  elem: 'demo0'
-			  ,count: 50 //数据总数
+				elem: 'demo0'
+				, count: 50 //数据总数
 			});
 		});
-		</script>
-		
-	</body>
+	</script>
+
+</body>
+
 </html>

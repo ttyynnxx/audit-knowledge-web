@@ -1,244 +1,267 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>知识结果列表</title>
-		
-		<link href="plugins/icon/iconfont.css"  rel="stylesheet" type="text/css"/>
-		<link rel="stylesheet" href="plugins/fontawesome-5.7.2/css/all.css" />
-		<link href="plugins/layui/css/layui.css"  rel="stylesheet" type="text/css"/>
-		<link href="css/reset.css" rel="stylesheet" type="text/css"/>
-		<link href="css/style.css" rel="stylesheet" type="text/css"/>
-		
-		<script type="text/javascript" src="plugins/layui/layui.js"></script>
-		<script type="text/javascript" src="plugins/icon/iconfont.js"></script>
-		<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
-	</head>
-	<body>
-		<header>
-			<div class="wrapper">
-				<img src="img/logo-white.png" class="fl logo">
-				<div class="top-search fl">
-					<input type="text" class="top-input" />
-					<a href="#" class="i-searchBtn"><i class="fas fa-search"></i> 查询</a>
-				</div>
-				<a href="mine.html" class="top-user"><i class="fas fa-user-circle"></i> 个人中心</a>
+
+<head>
+	<meta charset="utf-8">
+	<title>知识结果列表</title>
+
+	<link href="plugins/icon/iconfont.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="plugins/fontawesome-5.7.2/css/all.css" />
+	<link href="plugins/layui/css/layui.css" rel="stylesheet" type="text/css" />
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="plugins/layui/layui.js"></script>
+	<script type="text/javascript" src="plugins/icon/iconfont.js"></script>
+	<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="wrapper">
+			<a href="list.html"><img src="img/logo-white.png" class="fl logo"></a>
+			<div class="top-search fl">
+				<input type="text" class="top-input" />
+				<a href="#" class="i-searchBtn"><i class="fas fa-search"></i> 查询</a>
 			</div>
-		</header>
-		
-		<div class="wrapper mt80" style="z-index: 2;">
-			<div class="w330">
-				<div class="title01-bg mt20">关联标签</div>
-				<div class="mt10">
-					<a href="#" class="tag-item"># 知识产权 <em>(86)</em></a>
-					<a href="#" class="tag-item"># 知识转型 <em>(86)</em></a>
-					<a href="#" class="tag-item"># 生产 <em>(115)</em></a>
-					<a href="#" class="tag-item"># 人力 <em>(23)</em></a>
-					<a href="#" class="tag-item"># 知识转型 <em>(86)</em></a>
-					<a href="#" class="tag-item"># 生产 <em>(115)</em></a>
-				</div>
-				<!--词云-->
-				<div class="title-word mt20"><span>词云</span></div>
-				<!--词云 end-->
-			</div>
-			<!--左侧-->
-			<div class="detail-con">
-				<h1 class="detail-h1">走向知识服务—寻找新世纪图书情报工作的生长点</h1>
-				<p class="property mt20">
-					<span><label>知识目录：</label><a href="#">文档知识库</a></span>
-					<span><label>作者：</label>陈兵</span>
-					<span><label>时间：</label>2014-05-12</span>
-					<span><label>评分：</label><i class="layui-icon layui-icon-rate-solid"></i><i class="layui-icon layui-icon-rate-solid"></i><i class="layui-icon layui-icon-rate-solid"></i><i class="layui-icon layui-icon-rate-solid"></i><i class="layui-icon layui-icon-rate"></i></span>
-				</p>
-				<Summary class="mt20">
-				<label>摘要：</label>
-					石中英教授在本书中对"知识"进行了探索,对知识转型与教育改革之间的关系进行了研究。他从历史和社会的角度分析知识与教育的关系,认为不同时期有着不同的知识类型,当一个时期的知识不能满足该时期的社会需求时,知识就会发生转变来促进社会的进步。教育则承担着生产知识、改造知识、传播知识的重任。随着知识的转型,教育也不断进行改革来适应社会需求。
-				</Summary>
-				<p class="property mt10">
-					<span><label>关键字：</label><a href="#" class="mr10">教育改革 </a><a href="#" class="mr10">知识与教育 </a><a href="#" class="mr10">生产知识 </a></span>
-				</p>
-				<p class="property mt10">
-					<span><label>格式：</label>WORD</span>
-				</p>
-				<!--操作栏-->
-				<div class="action-bar">
-					<a href="#" class="btn-action btn-view">立即预览</a>
-					<a href="#" class="btn-action btn-download">下载</a>
-					<a href="#" class="btn-action"><i class="far fa-star"></i>收藏</a>
-					<a href="#" class="btn-action"><i class="fas fa-share-alt"></i>分享</a>
-					<a href="#rate" class="btn-action"><i class="fas fa-edit"></i>评论</a>
-				</div>
-				<!--操作栏 end-->
-				<!--推荐-->
-				<div class="title-recommend mt30"><span>相似推荐</span></div>
-				<div class="recommend-li">
-					<div class="list-item">
-						<a class="title" href="list.html">
-							VHDL硬件描述语言与数字逻辑电路设计—电子工程师必备知识
-						</a>
-						<p class="property">
-							<span><label>作者：</label>陈兵</span>
-							<span><label>时间：</label>2014-05-12</span>
-							<span><label>格式：</label>WORD</span>
-						</p>
-						<Summary>
-						Costanza等提出的生态服务价值化评估方法在中国直接运用存在一些缺陷:低估或者忽略了某些生态系统服务价值。因此,笔者在其生态系统服务价值评估体系的基础上分别在2002年和2006年对中国700位具有生态学背景的专业人员进行问卷调查,得出了新的生态系统服务评估单价体系。	
-						</Summary>
-					</div>
-					<div class="list-item">
-						<a class="title">
-							VHDL硬件描述知识转型与教育改革之要旨解读及启示
-						</a>
-						<p class="property">
-							<span><label>作者：</label>陈兵</span>
-							<span><label>时间：</label>2014-05-12</span>
-							<span><label>格式：</label>WORD</span>
-						</p>
-						<Summary>
-						一,作者简介石中英,1991年毕业,获教育学学士学位;1991年至1997年在北京师范大学教育系学习,先后获教育学硕士和博士学位;2000年至2001年受国家留学基金委资助,赴英国伦
-						</Summary>
-					</div>
-					<div class="list-item">
-						<a class="title">
-							《知识转型与教育改革》之要旨解读及启示
-						</a>
-						<p class="property">
-							<span><label>作者：</label>陈兵</span>
-							<span><label>时间：</label>2014-05-12</span>
-							<span><label>格式：</label>WORD</span>
-						</p>
-						<Summary>
-						Costanza等提出的生态服务价值化评估方法在中国直接运用存在一些缺陷:低估或者忽略了某些生态系统服务价值。因此,笔者在其生服务价值评估体系的基础上分别在2002年和2006年对中国700位具有生态学背景的专业人员进行问卷调查,得出了新的生态系统服务评估单价体系。	
-						</Summary>
-					</div>
-					<div class="list-item">
-						<a class="title">
-							VHDL硬件描述语言与数字逻辑电路设计—电子工程师必备知识
-						</a>
-						<p class="property">
-							<span><label>作者：</label>陈兵</span>
-							<span><label>时间：</label>2014-05-12</span>
-							<span><label>格式：</label>WORD</span>
-						</p>
-						<Summary>
-						Costanza等提出的生态服务价值化评估方法在中国直接运用存在一些缺陷:低估或者忽略了某些生态系统服务价值。因此,笔者在其生态系统服务价值评估体系的基础上分别在2002年和2006年对中国700位具有生态学背景的专业人员进行问卷调查,得出了新的生态系统服务评估单价体系。	
-						</Summary>
-					</div>
-					<div class="list-item">
-						<a class="title">
-							《知识转型与教育改革》之要旨解读及启示
-						</a>
-						<p class="property">
-							<span><label>作者：</label>陈兵</span>
-							<span><label>时间：</label>2014-05-12</span>
-							<span><label>格式：</label>WORD</span>
-						</p>
-						<Summary>
-						Costanza等提出的生态服务价值化评估方法在中国直接运用存在一些缺陷:低估或者忽略了某些生态系统服务价值。因此,笔者在其生服务价值评估体系的基础上分别在2002年和2006年对中国700位具有生态学背景的专业人员进行问卷调查,得出了新的生态系统服务评估单价体系。	
-						</Summary>
-					</div>
-				</div>
-				<div id="demo0"></div>
-				<!--推荐 end-->
-				<!--评论-->
-				<a name="rate"></a>
-				<div class="title-recommend mt20" ><span>我要评论</span></div>
-				<div class="mt5">评分：<div id="rate-mark"></div></div>
-				<textarea class="rate-area" rows="3" placeholder="留下您的评价吧"></textarea>
-				<div class="rate-li">
-					<div class="rate-item">
-						<i class="fas fa-user-circle rate-user"></i>
-						<dl class="rate-dl">
-							<dt>
-								<label>李可可</label>
-								<span><i class="layui-icon layui-icon-rate-solid"></i><i class="layui-icon layui-icon-rate-solid"></i><i class="layui-icon layui-icon-rate-solid"></i><i class="layui-icon layui-icon-rate-solid"></i><i class="layui-icon layui-icon-rate"></i></span>
-								<em>2020-05-19 18:21</em>
-							</dt>
-							<dd>
-							感觉大家目前都在尝试阶段，很多东西经不起推敲，应用性和开发难度都不是太能成熟~	
-							</dd>
-						</dl>
-					</div>
-					<div class="rate-item">
-						<i class="fas fa-user-circle rate-user"></i>
-						<dl class="rate-dl">
-							<dt>
-								<label>文轩</label>
-								<span><i class="layui-icon layui-icon-rate-solid"></i><i class="layui-icon layui-icon-rate-solid"></i><i class="layui-icon layui-icon-rate-solid"></i><i class="layui-icon layui-icon-rate-solid"></i><i class="layui-icon layui-icon-rate"></i></span>
-								<em>2020-05-19 18:21</em>
-							</dt>
-							<dd>
-							 解决不了 无论是华为外置方案以及三星的内置方案 都有肉眼可见的这哼
-							</dd>
-						</dl>
-					</div>
-					<div class="rate-item">
-						<i class="fas fa-user-circle rate-user"></i>
-						<dl class="rate-dl">
-							<dt>
-								<label>丽丽</label>
-								<span><i class="layui-icon layui-icon-rate-solid"></i><i class="layui-icon layui-icon-rate-solid"></i><i class="layui-icon layui-icon-rate-solid"></i><i class="layui-icon layui-icon-rate-solid"></i><i class="layui-icon layui-icon-rate"></i></span>
-								<em>2020-05-19 18:21</em>
-							</dt>
-							<dd>
-							感觉大家目前都在尝试阶段，很多东西经不起推敲，应用性和开发难度都不是太能成熟~	
-							</dd>
-						</dl>
-					</div>
-					<div class="rate-item">
-						<i class="fas fa-user-circle rate-user"></i>
-						<dl class="rate-dl">
-							<dt>
-								<label>李可可</label>
-								<span><i class="layui-icon layui-icon-rate-solid"></i><i class="layui-icon layui-icon-rate-solid"></i><i class="layui-icon layui-icon-rate-solid"></i><i class="layui-icon layui-icon-rate-solid"></i><i class="layui-icon layui-icon-rate"></i></span>
-								<em>2020-05-19 18:21</em>
-							</dt>
-							<dd>
-							感觉大家目前都在尝试阶段，很多东西经不起推敲，应用性和开发难度都不是太能成熟~	
-							</dd>
-						</dl>
-					</div>
-				</div>
-				<div id="demo1"></div>
-				<!--评论 end-->
-			</div>
-			<!--左侧 end-->
+			<a href="mine.html" class="top-user"><i class="fas fa-user-circle"></i> 个人中心</a>
 		</div>
-		
-		<script>
+	</header>
+
+	<div class="wrapper mt80" style="z-index: 2;">
+		<div class="w330">
+			<div class="title01-bg mt20">关联标签</div>
+			<div class="mt10">
+				<a href="#" class="tag-item"># 知识产权 <em>(86)</em></a>
+				<a href="#" class="tag-item"># 知识转型 <em>(86)</em></a>
+				<a href="#" class="tag-item"># 生产 <em>(115)</em></a>
+				<a href="#" class="tag-item"># 人力 <em>(23)</em></a>
+				<a href="#" class="tag-item"># 知识转型 <em>(86)</em></a>
+				<a href="#" class="tag-item"># 生产 <em>(115)</em></a>
+			</div>
+			<!--词云-->
+			<div class="title-word mt20"><span>词云</span></div>
+			<!--词云 end-->
+		</div>
+		<!--左侧-->
+		<div class="detail-con">
+			<h1 class="detail-h1">走向知识服务—寻找新世纪图书情报工作的生长点</h1>
+			<p class="property mt20">
+				<span><label>知识目录：</label><a href="#">文档知识库</a></span>
+				<span><label>作者：</label>陈兵</span>
+				<span><label>时间：</label>2014-05-12</span>
+				<span><label>评分：</label><i class="layui-icon layui-icon-rate-solid"></i><i
+						class="layui-icon layui-icon-rate-solid"></i><i class="layui-icon layui-icon-rate-solid"></i><i
+						class="layui-icon layui-icon-rate-solid"></i><i class="layui-icon layui-icon-rate"></i></span>
+			</p>
+			<Summary class="mt20">
+				<label>摘要：</label>
+				石中英教授在本书中对"知识"进行了探索,对知识转型与教育改革之间的关系进行了研究。他从历史和社会的角度分析知识与教育的关系,认为不同时期有着不同的知识类型,当一个时期的知识不能满足该时期的社会需求时,知识就会发生转变来促进社会的进步。教育则承担着生产知识、改造知识、传播知识的重任。随着知识的转型,教育也不断进行改革来适应社会需求。
+			</Summary>
+			<p class="property mt10">
+				<span><label>关键字：</label><a href="#" class="mr10">教育改革 </a><a href="#" class="mr10">知识与教育 </a><a
+						href="#" class="mr10">生产知识 </a></span>
+			</p>
+			<p class="property mt10">
+				<span><label>格式：</label>WORD</span>
+			</p>
+			<!--操作栏-->
+			<div class="action-bar">
+				<a href="#" class="btn-action btn-view">立即预览</a>
+				<a href="#" class="btn-action btn-download">下载</a>
+				<a href="#" class="btn-action"><i class="far fa-star"></i>收藏</a>
+				<a href="#" class="btn-action"><i class="fas fa-share-alt"></i>分享</a>
+				<a href="#rate" class="btn-action"><i class="fas fa-edit"></i>评论</a>
+			</div>
+			<!--操作栏 end-->
+			<!--推荐-->
+			<div class="title-recommend mt30"><span>相似推荐</span></div>
+			<div class="recommend-li">
+				<div class="list-item">
+					<a class="title" href="list.html">
+						VHDL硬件描述语言与数字逻辑电路设计—电子工程师必备知识
+					</a>
+					<p class="property">
+						<span><label>作者：</label>陈兵</span>
+						<span><label>时间：</label>2014-05-12</span>
+						<span><label>格式：</label>WORD</span>
+					</p>
+					<Summary>
+						Costanza等提出的生态服务价值化评估方法在中国直接运用存在一些缺陷:低估或者忽略了某些生态系统服务价值。因此,笔者在其生态系统服务价值评估体系的基础上分别在2002年和2006年对中国700位具有生态学背景的专业人员进行问卷调查,得出了新的生态系统服务评估单价体系。
+					</Summary>
+				</div>
+				<div class="list-item">
+					<a class="title">
+						VHDL硬件描述知识转型与教育改革之要旨解读及启示
+					</a>
+					<p class="property">
+						<span><label>作者：</label>陈兵</span>
+						<span><label>时间：</label>2014-05-12</span>
+						<span><label>格式：</label>WORD</span>
+					</p>
+					<Summary>
+						一,作者简介石中英,1991年毕业,获教育学学士学位;1991年至1997年在北京师范大学教育系学习,先后获教育学硕士和博士学位;2000年至2001年受国家留学基金委资助,赴英国伦
+					</Summary>
+				</div>
+				<div class="list-item">
+					<a class="title">
+						《知识转型与教育改革》之要旨解读及启示
+					</a>
+					<p class="property">
+						<span><label>作者：</label>陈兵</span>
+						<span><label>时间：</label>2014-05-12</span>
+						<span><label>格式：</label>WORD</span>
+					</p>
+					<Summary>
+						Costanza等提出的生态服务价值化评估方法在中国直接运用存在一些缺陷:低估或者忽略了某些生态系统服务价值。因此,笔者在其生服务价值评估体系的基础上分别在2002年和2006年对中国700位具有生态学背景的专业人员进行问卷调查,得出了新的生态系统服务评估单价体系。
+					</Summary>
+				</div>
+				<div class="list-item">
+					<a class="title">
+						VHDL硬件描述语言与数字逻辑电路设计—电子工程师必备知识
+					</a>
+					<p class="property">
+						<span><label>作者：</label>陈兵</span>
+						<span><label>时间：</label>2014-05-12</span>
+						<span><label>格式：</label>WORD</span>
+					</p>
+					<Summary>
+						Costanza等提出的生态服务价值化评估方法在中国直接运用存在一些缺陷:低估或者忽略了某些生态系统服务价值。因此,笔者在其生态系统服务价值评估体系的基础上分别在2002年和2006年对中国700位具有生态学背景的专业人员进行问卷调查,得出了新的生态系统服务评估单价体系。
+					</Summary>
+				</div>
+				<div class="list-item">
+					<a class="title">
+						《知识转型与教育改革》之要旨解读及启示
+					</a>
+					<p class="property">
+						<span><label>作者：</label>陈兵</span>
+						<span><label>时间：</label>2014-05-12</span>
+						<span><label>格式：</label>WORD</span>
+					</p>
+					<Summary>
+						Costanza等提出的生态服务价值化评估方法在中国直接运用存在一些缺陷:低估或者忽略了某些生态系统服务价值。因此,笔者在其生服务价值评估体系的基础上分别在2002年和2006年对中国700位具有生态学背景的专业人员进行问卷调查,得出了新的生态系统服务评估单价体系。
+					</Summary>
+				</div>
+			</div>
+			<div id="demo0"></div>
+			<!--推荐 end-->
+			<!--评论-->
+			<a name="rate"></a>
+			<div class="title-recommend mt20"><span>我要评论</span></div>
+			<div class="mt5">评分：<div id="rate-mark"></div>
+			</div>
+			<textarea class="rate-area" rows="3" placeholder="留下您的评价吧"></textarea>
+			<div class="rate-li">
+				<div class="rate-item">
+					<i class="fas fa-user-circle rate-user"></i>
+					<dl class="rate-dl">
+						<dt>
+							<label>李可可</label>
+							<span><i class="layui-icon layui-icon-rate-solid"></i><i
+									class="layui-icon layui-icon-rate-solid"></i><i
+									class="layui-icon layui-icon-rate-solid"></i><i
+									class="layui-icon layui-icon-rate-solid"></i><i
+									class="layui-icon layui-icon-rate"></i></span>
+							<em>2020-05-19 18:21</em>
+						</dt>
+						<dd>
+							感觉大家目前都在尝试阶段，很多东西经不起推敲，应用性和开发难度都不是太能成熟~
+						</dd>
+					</dl>
+				</div>
+				<div class="rate-item">
+					<i class="fas fa-user-circle rate-user"></i>
+					<dl class="rate-dl">
+						<dt>
+							<label>文轩</label>
+							<span><i class="layui-icon layui-icon-rate-solid"></i><i
+									class="layui-icon layui-icon-rate-solid"></i><i
+									class="layui-icon layui-icon-rate-solid"></i><i
+									class="layui-icon layui-icon-rate-solid"></i><i
+									class="layui-icon layui-icon-rate"></i></span>
+							<em>2020-05-19 18:21</em>
+						</dt>
+						<dd>
+							解决不了 无论是华为外置方案以及三星的内置方案 都有肉眼可见的这哼
+						</dd>
+					</dl>
+				</div>
+				<div class="rate-item">
+					<i class="fas fa-user-circle rate-user"></i>
+					<dl class="rate-dl">
+						<dt>
+							<label>丽丽</label>
+							<span><i class="layui-icon layui-icon-rate-solid"></i><i
+									class="layui-icon layui-icon-rate-solid"></i><i
+									class="layui-icon layui-icon-rate-solid"></i><i
+									class="layui-icon layui-icon-rate-solid"></i><i
+									class="layui-icon layui-icon-rate"></i></span>
+							<em>2020-05-19 18:21</em>
+						</dt>
+						<dd>
+							感觉大家目前都在尝试阶段，很多东西经不起推敲，应用性和开发难度都不是太能成熟~
+						</dd>
+					</dl>
+				</div>
+				<div class="rate-item">
+					<i class="fas fa-user-circle rate-user"></i>
+					<dl class="rate-dl">
+						<dt>
+							<label>李可可</label>
+							<span><i class="layui-icon layui-icon-rate-solid"></i><i
+									class="layui-icon layui-icon-rate-solid"></i><i
+									class="layui-icon layui-icon-rate-solid"></i><i
+									class="layui-icon layui-icon-rate-solid"></i><i
+									class="layui-icon layui-icon-rate"></i></span>
+							<em>2020-05-19 18:21</em>
+						</dt>
+						<dd>
+							感觉大家目前都在尝试阶段，很多东西经不起推敲，应用性和开发难度都不是太能成熟~
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div id="demo1"></div>
+			<!--评论 end-->
+		</div>
+		<!--左侧 end-->
+	</div>
+
+	<script>
 		//注意：折叠面板 依赖 element 模块，否则无法进行功能性操作
-		layui.use(['element','form','laypage','rate'], function(){
-		  var element = layui.element,
-		  form = layui.form,
-		  laypage = layui.laypage,
-		  rate = layui.rate;
-		  //总页数低于页码总数
-		    laypage.render({
-		      elem: 'demo0'
-		      ,count: 50 //数据总数
-		    });
+		layui.use(['element', 'form', 'laypage', 'rate'], function () {
+			var element = layui.element,
+				form = layui.form,
+				laypage = layui.laypage,
+				rate = layui.rate;
+			//总页数低于页码总数
+			laypage.render({
+				elem: 'demo0'
+				, count: 50 //数据总数
+			});
 			//总页数大于页码总数
-			  laypage.render({
-			    elem: 'demo1'
-			    ,count: 70 //数据总数
-			    ,jump: function(obj){
-			      console.log(obj)
-			    }
-			  });
+			laypage.render({
+				elem: 'demo1'
+				, count: 70 //数据总数
+				, jump: function (obj) {
+					console.log(obj)
+				}
+			});
 			//渲染
 			var ins1 = rate.render({
-			  elem: '#rate-mark'  ,//绑定元素
-			  setText: function(value){
-			      var arrs = {
-			        '1': '极差'
-			        ,'2': '差'
-			        ,'3': '中等'
-			        ,'4': '好'
-			      };
-			      this.span.text(arrs[value] || ( value + "星"));
-			    } 
+				elem: '#rate-mark',//绑定元素
+				setText: function (value) {
+					var arrs = {
+						'1': '极差'
+						, '2': '差'
+						, '3': '中等'
+						, '4': '好'
+					};
+					this.span.text(arrs[value] || (value + "星"));
+				}
 			});
 		});
-		</script>
-	</body>
+	</script>
+</body>
+
 </html>
